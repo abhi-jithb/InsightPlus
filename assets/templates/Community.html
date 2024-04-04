@@ -1,0 +1,238 @@
+<!-- community.html -->
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contents %}
+<div class="community">
+    <div class="container mt-8">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Welcome to Our Community Page</h1>
+                <p>This is where you can engage with other members of the community.</p>
+                <!-- Add your community content here -->
+                
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Depression Management Questions</title>
+                    <style>
+                        .card {
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                            padding: 10px;
+                            margin-bottom: 10px;
+                            background-color: #f9f9f9;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h1>Community for Depression Management</h1>
+                    <h1>Welcome to Our Community Page</h1>
+                    <p>This is where you can engage with other members of the community.</p>
+                    {% for question in questions %}
+                    <div class="card">
+                        <p>{{ question }}</p>
+                    </div>
+                    {% endfor %}
+
+
+                    <div class="card bg-light">
+                        <header class="card-header border-0 bg-transparent">
+                          <img
+                            src="https://via.placeholder.com/40x40"
+                            class="rounded-circle me-2"
+                          /><a class="fw-semibold text-decoration-none">Rock</a>
+                          <!-- <span class="ms-3 small text-muted">2 months ago</span> -->
+                        </header>
+                        <div class="card-body py-1">
+                          <form>
+                            <div>
+                              <label for="exampleFormControlTextarea1" class="visually-hidden">
+                                Comment</label
+                              >
+                              <textarea
+                                class="form-control form-control-sm border border-2 rounded-1"
+                                id="exampleFormControlTextarea1"
+                                style="height: 50px"
+                                placeholder="Add a comment..."
+                                minlength="3"
+                                maxlength="255"
+                                required
+                              ></textarea>
+                            </div>
+                          </form>
+                        </div>
+                        <footer class="card-footer bg-transparent border-0 text-end">
+                          <button class="btn btn-link btn-sm me-2 text-decoration-none">
+                            Cancel
+                          </button>
+                          <button
+                            type="submit"
+                            class="btn btn-primary btn-sm"
+                          >
+                            Submit
+                          </button>
+                        </footer>
+                      </div>
+                  
+                      <aside class="d-flex justify-content-between align-items-center my-4">
+                      <h4 class="h6">3 Comments</h4>
+                      </aside>
+                  
+                      <article class="card bg-light">
+                        <header class="card-header border-0 bg-transparent d-flex align-items-center">
+                          <div>
+                          <img
+                            src="https://via.placeholder.com/40x40"
+                            class="rounded-circle me-2"
+                          /><a class="fw-semibold text-decoration-none">Sone</a>
+                          <span class="ms-3 small text-muted">2 months ago</span>
+                          </div>
+                          <div class="dropdown ms-auto">
+                          <button class="btn btn-link text-decoration-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="bi bi-three-dots-vertical"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Report</a></li>
+                          </ul>
+                        </div>
+                        </header>
+                        <div class="card-body py-2 px-3">
+ thanks this app is a good relief at hard times                         </div>
+                        <footer class="card-footer bg-white border-0 py-1 px-3">
+                          <button
+                            type="button"
+                            class="btn btn-link btn-sm text-decoration-none ps-0"
+                          >
+                            <i class="bi bi-hand-thumbs-up me-1"></i>(3)
+                          </button>
+                          <button type="button" class="btn btn-link btn-sm text-decoration-none">
+                            Reply
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-light btn-sm border rounded-4 ms-2"
+                          >
+                            <i class="bi bi-check-circle-fill text-secondary"></i> Mark as answer
+                          </button>
+                        </footer>
+                      </article>
+                      <aside>
+                        <button
+                          type="button"
+                          class="btn btn-link btn-sm text-decoration-none ms-2 my-2"
+                        >
+                          4 replies
+                        </button>
+                        <section id="comment-replies" class="ms-5 ms-md-5">
+                          <article class="card bg-light mb-3">
+                            <header class="card-header border-0 bg-transparent">
+                              <img
+                                src="https://via.placeholder.com/30x30"
+                                class="rounded-circle me-2"
+                              /><a class="fw-semibold text-decoration-none">Lara</a>
+                              <span class="ms-3 small text-muted">2 months ago</span>
+                            </header>
+                            <div class="card-body py-2 px-3">
+Thanks a lot                            </div>
+                            <footer class="card-footer bg-white border-0 py-1 px-3">
+                              <button
+                                type="button"
+                                class="btn btn-link btn-sm text-decoration-none ps-0"
+                              >
+                                <i class="bi bi-hand-thumbs-up me-1"></i>(3)
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-link btn-sm text-decoration-none"
+                              >
+                                Reply
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-light btn-sm border rounded-4 ms-2"
+                              >
+                                <i class="bi bi-check-circle-fill text-secondary"></i> Mark as
+                                answer
+                              </button>
+                            </footer>
+                          </article>
+                          <article class="card bg-light mb-3">
+                            <header class="card-header bg-transparent border-0">
+                              <img
+                                src="https://via.placeholder.com/30x30"
+                                class="rounded-circle me-2"
+                              /><a class="fw-semibold text-decoration-none">Akil</a>
+                              <span class="ms-3 small text-muted">2 months ago</span>
+                            </header>
+                            <div class="card-body py-2 px-3">
+A good nice i've overcomed a lot                            </div>
+                            <footer class="card-footer bg-white border-0 py-1 px-3">
+                              <button
+                                type="button"
+                                class="btn btn-link btn-sm text-decoration-none ps-0"
+                              >
+                                <i class="bi bi-hand-thumbs-up me-1"></i>(3)
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-link btn-sm text-decoration-none"
+                              >
+                                Reply
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-light btn-sm border rounded-4 ms-2"
+                              >
+                                <i class="bi bi-check-circle-fill text-secondary"></i> Mark as
+                                answer
+                              </button>
+                            </footer>
+                          </article>
+                          <article class="card bg-light">
+                            <header class="card-header border-0 bg-transparent">
+                              <img
+                                src="https://via.placeholder.com/30x30"
+                                class="rounded-circle me-2"
+                              /><a class="fw-semibold text-decoration-none">JohnDoe</a>
+                              <span class="ms-3 small text-muted">2 months ago</span>
+                            </header>
+                            <div class="card-body py-2 px-3">
+                                This was a great app to overcome depression and make you feel better
+                            </div>
+                            <footer class="card-footer bg-white border-0 py-1 px-3">
+                              <button
+                                type="button"
+                                class="btn btn-link btn-sm text-decoration-none ps-0"
+                              >
+                                <i class="bi bi-hand-thumbs-up me-1"></i>(3)
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-link btn-sm text-decoration-none"
+                              >
+                                Reply
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-light btn-sm border rounded-4 ms-2"
+                              >
+                                <i class="bi bi-check-circle-fill text-secondary"></i> Mark as
+                                answer
+                              </button>
+                            </footer>
+                          </article>
+                        </section>
+                      </aside>
+                </body>
+                </html>
+                
+
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

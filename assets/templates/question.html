@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .question-text {
+            font-weight: bold;
+        }
+        .answer-input {
+            margin-left: 10px;
+        }
+        .submit-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Questionnaire</h1>
+    <form id="questionnaire-form">
+        <div class="question">
+            <p class="question-text">Question 1: What is your favorite color?</p>
+            <input type="text" class="answer-input" name="q1">
+        </div>
+        <div class="question">
+            <p class="question-text">Question 2: How often do you exercise?</p>
+            <select class="answer-input" name="q2">
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="rarely">Rarely</option>
+            </select>
+        </div>
+        <div class="question">
+            <p class="question-text">Question 3: What is your favorite animal?</p>
+            <input type="text" class="answer-input" name="q3">
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('questionnaire-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // prevent form submission
+            // You can add code here to handle form submission, like collecting answers and sending them to a server.
+            console.log('Form submitted!');
+        });
+    </script>
+</body>
+</html>

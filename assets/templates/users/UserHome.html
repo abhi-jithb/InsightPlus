@@ -1,0 +1,32 @@
+{%extends 'users/userbase.html'%}
+{%load static%}
+
+{%block contents%}
+
+<div class="home">
+		<div class="home_slider_container">
+
+			<!-- Home Slider -->
+			<div class="owl-carousel owl-theme home_slider">
+
+				<!-- Home Slider Item -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url({%static 'images/stress-2.jpeg'%})"></div>
+					<div class="home_slider_content">
+						<div class="container">
+							<div class="row">
+								<div class="col text-center">
+									<div class="home_slider_title text-dark">InsightPlus </div>
+									<div class="home_slider_subtitle text-white">By Image Processing and Machine Learning</div>
+									<div class="home_slider_form_container">
+										<p>                                        </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{%endblock%}

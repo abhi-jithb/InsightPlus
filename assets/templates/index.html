@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contents %}
+
+<div class="home">
+	<div class="home_slider_container">
+
+		<!-- Home Slider -->
+		<div class="owl-carousel owl-theme home_slider">
+
+			<!-- Home Slider Item -->
+			<div class="owl-item pd-0">
+				<div class="home_slider_background" style="background-image:url({% static 'images/stress-3 - Copy.jpg' %})"></div>
+				<div class="home_slider_content pd-0">
+					<div class="container">
+						<div class="row">
+							<div class="col text-center mt-5"> <!-- Add mt-5 class to reduce the top margin -->
+								<div class="home_slider_title text-dark">InsightPlus</div>
+								<div class="home_slider_subtitle text-secondary">"Imaginary quotes may be make-believe, but the joy and comfort they provide are oh so real."</div>
+								<div class="home_slider_form_container">
+									<p>
+										
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
