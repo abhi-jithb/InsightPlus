@@ -21,6 +21,6 @@
 ### Survey Form Integration: 
 Provides employees with periodic survey forms for stress assessment and management.
 ### Objective:
-Aims to manage stress effectively and optimize employee performance during working hours.
+Aims to manage stress effectively and optimize people's performance during working hours.
 
 
