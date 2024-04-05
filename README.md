@@ -24,6 +24,6 @@ Provides employees with periodic survey forms for stress assessment and manageme
 Aims to manage stress effectively and optimize people's performance during working hours.
 
 
-![Hackathon Image](WhatsApp Image 2024-04-05 at 11.50.12 PM.jpeg.jpg)
+![Hackathon Image](WhatsApp Image 2024-04-05 at 11.50.12 PM.jpeg)
 
 
